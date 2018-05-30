@@ -1,6 +1,11 @@
 # RecipeBook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1. 
+It is the tutorial project for the Angular Complete Guide on Udemy.
+
+## Dependencies 
+
+To install the dependencies for the project run `npm install`.
 
 ## Development server
 
