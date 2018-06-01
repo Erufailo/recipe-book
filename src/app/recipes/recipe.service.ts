@@ -5,7 +5,6 @@ import { ShoppingListService } from '../shopping-list/shopping-list.service';
 
 @Injectable()
 export class RecipeService {
-  recipeSelected = new EventEmitter<Recipe>();
 
   private recipes: Recipe[] = [
     new Recipe('Crunchy Chicken', 'This is a test chicken', 'http://d1feh1dhsditw.cloudfront.net/media/36258/crunchychicken_right.jpg', [
@@ -25,6 +24,9 @@ export class RecipeService {
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.slService.addIngredients(ingredients);
-
+  }
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 }
+
